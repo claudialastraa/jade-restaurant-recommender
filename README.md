@@ -4,8 +4,6 @@ MADTASTE es un sistema multiagente desarrollado en Java con JADE cuyo objetivo e
 
 El sistema utiliza agentes especializados que cooperan mediante mensajes ACL y servicios registrados en el Directory Facilitator de JADE.
 
----
-
 ## Descripción general
 
 MADTASTE permite al usuario introducir preferencias mediante una interfaz gráfica:
@@ -17,7 +15,6 @@ MADTASTE permite al usuario introducir preferencias mediante una interfaz gráfi
 
 A partir de esos datos, el sistema consulta información meteorológica, obtiene datos de restaurantes desde un fichero CSV y calcula un ranking de recomendaciones ordenado por puntuación.
 
----
 
 ## Agentes del sistema
 
@@ -32,8 +29,6 @@ Funciones principales:
 - Envía una petición al agente recomendador.
 - Muestra el ranking de restaurantes recomendado.
 
----
-
 ### RecommendationAgent
 
 Agente inteligente del sistema.
@@ -47,8 +42,6 @@ Funciones principales:
 - Calcula una puntuación para cada restaurante.
 - Ordena los restaurantes de mayor a menor puntuación.
 - Devuelve el resultado al `InterfaceAgent`.
-
----
 
 ### WeatherAgent
 
@@ -70,7 +63,6 @@ temperatura = 24
 lluvia = false
 ```
 
----
 
 ### RestaurantDataAgent
 
@@ -94,8 +86,6 @@ Ejemplo:
 La Tagliatella,italiana,18,2.1,4.3,true,true
 ```
 
----
-
 ## Comunicación entre agentes
 
 Los agentes se comunican mediante mensajes ACL de JADE.
@@ -113,8 +103,6 @@ Flujo principal:
 9. `RecommendationAgent` responde a `InterfaceAgent` con un mensaje `INFORM`.
 10. `InterfaceAgent` muestra las recomendaciones en la interfaz.
 
----
-
 ## Servicios registrados en el DF
 
 Los agentes utilizan el Directory Facilitator de JADE para registrar y buscar servicios.
@@ -124,8 +112,6 @@ Los agentes utilizan el Directory Facilitator de JADE para registrar y buscar se
 | WeatherAgent | weather-service |
 | RestaurantDataAgent | restaurant-data-service |
 | RecommendationAgent | recommendation-service |
-
----
 
 ## Diagrama de arquitectura
 
@@ -173,8 +159,6 @@ REQUEST clima   REQUEST restaurantes
 +------------------+
 ```
 
----
-
 ## Algoritmo de recomendación
 
 El sistema calcula una puntuación para cada restaurante usando varios criterios:
@@ -199,8 +183,6 @@ puntuación = valoración * 2
 + bonus por preferencia del usuario
 ```
 
----
-
 ## Estructura del proyecto
 
 ```text
@@ -218,8 +200,6 @@ MADTASTE
 │   └── jade.jar
 └── README.md
 ```
-
----
 
 ## Ejecución
 
@@ -243,8 +223,6 @@ Si el puerto está ocupado, se puede cambiar por otro. Por ejemplo:
 -port 1800
 ```
 
----
-
 ## Pasos para ejecutar en Eclipse
 
 1. Abrir Eclipse.
@@ -258,7 +236,6 @@ Si el puerto está ocupado, se puede cambiar por otro. Por ejemplo:
 9. Pulsar `Run`.
 10. En la ventana de MADTASTE, introducir preferencias y pulsar `Obtener recomendaciones`.
 
----
 
 ## Dependencias
 
@@ -267,7 +244,6 @@ Si el puerto está ocupado, se puede cambiar por otro. Por ejemplo:
 - JADE
 - Librería `jade.jar`, incluida en la carpeta `lib`
 
----
 
 ## Datos de ejemplo
 
@@ -288,7 +264,6 @@ Taco Centro,mexicana,14,2.5,4.0,true,true
 Burger Plaza,americana,12,1.8,3.9,false,true
 ```
 
----
 
 ## Capturas recomendadas para la entrega
 
@@ -299,7 +274,6 @@ Se recomienda incluir capturas de:
 - Un ejemplo de ranking generado.
 - La consola mostrando el intercambio de mensajes entre agentes.
 
----
 
 ## Mejoras futuras
 
@@ -313,7 +287,6 @@ Posibles ampliaciones del sistema:
 - Mejorar la interfaz gráfica.
 - Añadir explicaciones detalladas de por qué se recomienda cada restaurante.
 
----
 
 ## Uso de IA generativa
 
