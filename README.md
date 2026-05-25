@@ -302,7 +302,7 @@ Posibles ampliaciones del sistema:
 
 Durante el desarrollo del proyecto se ha utilizado asistencia de IA generativa como apoyo puntual, principalmente para resolver dudas, organizar el trabajo y guiarnos paso a paso en la implementación del sistema multiagente.
 
-En concreto, se ha utilizado ChatGPT como herramienta de apoyo para:
+En concreto, se ha utilizado ChatGPT GPT-5.5 Thinking como herramienta de apoyo para:
 
 - Planificar la arquitectura general del sistema.
 - Entender cómo estructurar los agentes en JADE.
