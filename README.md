@@ -243,13 +243,13 @@ jade.Boot
 ### Program arguments
 
 ```text
--gui -port 1700 weather:madtaste.agents.WeatherAgent;restaurants:madtaste.agents.RestaurantDataAgent;recommender:madtaste.agents.RecommendationAgent;interface:madtaste.agents.InterfaceAgent
+-gui -port 2000 weather:madtaste.agents.WeatherAgent;restaurants:madtaste.agents.RestaurantDataAgent;recommender:madtaste.agents.RecommendationAgent;interface:madtaste.agents.InterfaceAgent
 ```
 
 Si el puerto está ocupado, se puede cambiar por otro. Por ejemplo:
 
 ```text
--port 1800
+-port 2100
 ```
 
 ## Pasos para ejecutar en Eclipse
@@ -285,15 +285,6 @@ Casa Paco,española,15,1.2,4.1,true,true
 Taco Centro,mexicana,14,2.5,4.0,true,true
 Burger Plaza,americana,12,1.8,3.9,false,true
 ```
-
-## Capturas recomendadas para la entrega
-
-Se recomienda incluir capturas de:
-
-- La ventana RMA de JADE con los agentes activos.
-- La interfaz gráfica de MADTASTE.
-- Un ejemplo de ranking generado.
-- La consola mostrando el intercambio de mensajes entre agentes.
 
 ## Mejoras futuras
 
