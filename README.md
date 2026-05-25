@@ -15,7 +15,6 @@ MADTASTE permite al usuario introducir preferencias mediante una interfaz gráfi
 
 A partir de esos datos, el sistema consulta información meteorológica, obtiene datos de restaurantes desde un fichero CSV y calcula un ranking de recomendaciones ordenado por puntuación.
 
-
 ## Agentes del sistema
 
 ### InterfaceAgent
@@ -62,7 +61,6 @@ estado = soleado
 temperatura = 24
 lluvia = false
 ```
-
 
 ### RestaurantDataAgent
 
@@ -198,8 +196,39 @@ MADTASTE
 │   └── restaurantes.csv
 ├── lib
 │   └── jade.jar
+├── capturas
+│   └── dependencias.png
 └── README.md
 ```
+
+## Instalación
+
+Para ejecutar el proyecto es necesario tener instalado:
+
+- Java
+- Eclipse IDE
+- JADE
+
+Pasos de instalación:
+
+1. Descargar JADE.
+2. Crear o importar el proyecto en Eclipse.
+3. Copiar `jade.jar` dentro de la carpeta `lib/`.
+4. Añadir `jade.jar` al Build Path del proyecto.
+5. Comprobar que el proyecto compila sin errores.
+
+## Dependencias
+
+- Java
+- Eclipse IDE
+- JADE
+- Librería `jade.jar`, incluida en la carpeta `lib`
+
+## Captura de dependencias
+
+La dependencia principal del proyecto es `jade.jar`, incluida en la carpeta `lib/` y añadida al Build Path de Eclipse.
+
+![Captura de dependencias](capturas/dependencias.png)
 
 ## Ejecución
 
@@ -236,15 +265,6 @@ Si el puerto está ocupado, se puede cambiar por otro. Por ejemplo:
 9. Pulsar `Run`.
 10. En la ventana de MADTASTE, introducir preferencias y pulsar `Obtener recomendaciones`.
 
-
-## Dependencias
-
-- Java
-- Eclipse IDE
-- JADE
-- Librería `jade.jar`, incluida en la carpeta `lib`
-
-
 ## Datos de ejemplo
 
 El fichero de datos utilizado es:
@@ -252,6 +272,8 @@ El fichero de datos utilizado es:
 ```text
 data/restaurantes.csv
 ```
+
+El fichero CSV contiene varios restaurantes de ejemplo y puede ampliarse sin modificar el código del sistema.
 
 Contenido de ejemplo:
 
@@ -264,7 +286,6 @@ Taco Centro,mexicana,14,2.5,4.0,true,true
 Burger Plaza,americana,12,1.8,3.9,false,true
 ```
 
-
 ## Capturas recomendadas para la entrega
 
 Se recomienda incluir capturas de:
@@ -273,7 +294,6 @@ Se recomienda incluir capturas de:
 - La interfaz gráfica de MADTASTE.
 - Un ejemplo de ranking generado.
 - La consola mostrando el intercambio de mensajes entre agentes.
-
 
 ## Mejoras futuras
 
@@ -287,9 +307,18 @@ Posibles ampliaciones del sistema:
 - Mejorar la interfaz gráfica.
 - Añadir explicaciones detalladas de por qué se recomienda cada restaurante.
 
-
 ## Uso de IA generativa
 
-Durante el desarrollo se ha utilizado asistencia de IA generativa para apoyar la planificación, explicación del diseño, generación inicial de código y redacción de documentación.
+Durante el desarrollo del proyecto se ha utilizado asistencia de IA generativa como apoyo puntual, principalmente para resolver dudas, organizar el trabajo y guiarnos paso a paso en la implementación del sistema multiagente.
 
-El código ha sido revisado, probado y adaptado manualmente por los autores del proyecto.
+En concreto, se ha utilizado ChatGPT como herramienta de apoyo para:
+
+- Planificar la arquitectura general del sistema.
+- Entender cómo estructurar los agentes en JADE.
+- Resolver dudas sobre mensajes ACL, comportamientos y Directory Facilitator.
+- Revisar errores de ejecución y configuración en Eclipse.
+- Ayudar a redactar y ordenar la documentación del proyecto.
+
+El desarrollo, prueba y adaptación final del código ha sido realizado por los miembros del grupo. La IA no ha sustituido el trabajo del equipo, sino que se ha utilizado como guía y apoyo durante el proceso.
+
+Además, se ha utilizado Gamma como herramienta de apoyo para crear y organizar visualmente la presentación del proyecto.
